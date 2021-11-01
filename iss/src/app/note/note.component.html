@@ -1,0 +1,27 @@
+<mat-dialog-content [formGroup]="form">
+  
+    <div class="d-flex">
+        <span class="w-25">latitude:</span>
+        <input  readonly class="w-75"
+                placeholder="latitude"
+               formControlName="latitude">
+    </div>
+
+    <div class="d-flex">
+        <span class="w-25">longitude:</span>
+        <input  readonly class="w-75"
+                placeholder="longitude"
+               formControlName="longitude">
+    </div>
+
+    <div class="d-flex">
+        <span class="w-25">note:</span>
+        <input class="w-75"
+                placeholder="note"
+               formControlName="note">
+    </div>
+ 
+</mat-dialog-content>
+
+<button class="mat-raised-button btn"(click)="close()">Close</button>
+<button class="mat-raised-button mat-primary btn"(click)="save()">Save</button>

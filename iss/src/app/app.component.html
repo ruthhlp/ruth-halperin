@@ -1,0 +1,37 @@
+<!-- <h3>ruth halprin</h3>
+<h3>ruthhlp@gmail.com</h3> -->
+
+<div class="text-center">
+  <h3>International Space Station Current Location</h3>
+
+  <ng-container *ngIf="issPosition">
+    <div *ngIf="issPosition['latitude']">
+      <span>latitude:</span>
+      <span>{{issPosition['latitude']}}</span>
+    </div>
+    
+    <div *ngIf='issPosition.longitude'>
+      <span>longitude:</span> 
+      <span >{{issPosition.longitude}}</span>
+    </div>
+
+    <button class="mat-raised-button mat-primary btn" *ngIf='issPosition.longitude' (click)="openDialog()">Add Node</button>
+
+  </ng-container>
+
+
+  <ng-container *ngIf="notesList">
+    <div *ngFor="let note of notesList" class="row m-auto w-50">
+      <div class="col-4"><span>latitude:</span> {{note['latitude']}}</div>
+      <div class="col-4"><span>longitude:</span> {{note.longitude}}</div>
+      <div class="col-4"><span>note:</span> {{note.note}}</div>
+    </div>
+
+  </ng-container>
+
+</div>
+
+<footer class="text-center pt-5">
+  <div>Ruth Halperin :)</div>
+  <div>ruthhlp@gmail.com</div>
+</footer>
