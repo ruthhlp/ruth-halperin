@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
    }
 
   ngOnInit(): void {
-    interval(3000).subscribe(x => 
+    interval(2000).subscribe(x => 
       this.getData()
     )
     
