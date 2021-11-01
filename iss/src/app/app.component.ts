@@ -11,7 +11,6 @@ import { NoteComponent } from './note/note.component';
   entryComponents: [NoteComponent]
 })
 export class AppComponent implements OnInit{
-  title = 'iss';
   issPosition: any = {};
   dialogRef!: MatDialogRef<NoteComponent>;
   notesList: Array<any> = [];
